@@ -1,6 +1,6 @@
 size(600,600);
 background(255);
-int num = 5;
+int num = 6;
 
 
 if(num == 1){
@@ -31,5 +31,18 @@ if(num == 4){
 
 rectMode(CENTER);
 if(num == 5){
-  for(int
+  for(int i = 0; i < 10000; i += 90){
+    noFill();
+    rect(300, 300, i, i);
+  }
+}
+
+if(num == 6){
+  for(int x = 0; x < width; x += 30){
+    line(0, x, x, 600);
+  }
+  
+  for(int l = 600; l > -1; l -= 30){
+    line(600, l, l, 0);
+  }
 }
